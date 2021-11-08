@@ -50,6 +50,7 @@ export default class Reg extends(React.Component){
                 
                 if(json.token){          
                     this.props.chgScr("gallery")
+                    window.location.href = "gallery"
                     
                 }else{
                     this.setState({msg:json.error})

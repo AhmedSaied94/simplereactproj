@@ -45,6 +45,7 @@ export default class Login extends(React.Component){
                 
                 if(json.token){          
                     this.props.chgScr("gallery")
+                    window.location.href = "gallery"
                     
                 }else{
                     this.setState({msg:json.error})
